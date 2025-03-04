@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreedharsan M - Portfolio</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        nav {
+            background: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: background 0.3s;
+        }
+        nav a {
+            color: #00aaff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 20px;
+            padding: 15px;
+            transition: color 0.3s;
+        }
+        nav a.active {
+            border-bottom: 3px solid #00aaff;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 150px 100px;
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 50px;
+            border-radius: 15px;
+            max-width: 1100px;
+            width: 90%;
+            transition: transform 0.3s;
+            font-size: 20px;
+            border: 1px solid white;
+        }
+        .content:hover {
+            transform: scale(1.05);
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #333;
+            margin: 30px auto;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        h1, h2 {
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+        p {
+            line-height: 2;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    
+    <div id="home" class="section">
+        <div class="content">
+            <h1>Shreedharsan M</h1>
+            <p>B. Tech Information Technology</p>
+            <p>Karpagam College of Engineering</p>
+            <p>I'm an aspiring student passionate about DSA and technology exploration.</p>
+            <div class="profile-img">
+                <img src="photo.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+    
+    <div id="education" class="section">
+        <div class="content">
+            <h2>Education</h2>
+            <p>Graduation - Karpagam College Of Engineering (Anna University), 2026, CGPA: 7.6</p>
+            <p>HSC - CBSE, Amrita Vidyalayam, 2022, Percentage: 62%</p>
+            <p>SSLC - CBSE, Amrita Vidyalayam, 2019, Percentage: 82.5%</p>
+        </div>
+    </div>
+    
+    <div id="skills" class="section">
+        <div class="content">
+            <h2>Skills & Technologies</h2>
+            <p><strong>Languages:</strong> Java, C, C++</p>
+            <p><strong>Frameworks:</strong> Spring Boot</p>
+            <p><strong>Tools:</strong> MySQL</p>
+            <p><strong>Platforms:</strong> Visual Studio Code, IntelliJ</p>
+            <p><strong>Soft Skills:</strong> Excellent Communication, People Management</p>
+        </div>
+    </div>
+    
+    <div id="projects" class="section">
+        <div class="content">
+            <h2>Projects</h2>
+            <p><strong>EduTrack - Student Management System</strong> (Oct ‘24)</p>
+            <p>Centralized student management system for efficient data handling.</p>
+            <p>Features include student profiles, fee tracking, attendance monitoring.</p>
+            <p>Secure admin authentication for data privacy.</p>
+            
+            <p style="margin-top: 80px;"><strong>EduNav - Student Navigation System</strong> (Jun ‘24 - Sep ‘24)</p>
+            <p>Navigation system for educational content access.</p>
+            <p>Uses Java, Spring Boot, JSP, HTML, CSS for user-friendly experience.</p>
+        </div>
+    </div>
+</body>
+</html>
